@@ -1,23 +1,29 @@
 # 🚀 Portfolio migueljerico · base44
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Lenguaje-Múltiple-4A90E2?style=for-the-badge" alt="Lenguaje" />
-  <img src="https://img.shields.io/badge/Stack-Portfolio%20Web-FF6F61?style=for-the-badge" alt="Stack" />
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite" alt="Vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-3-06B6D4?style=for-the-badge&logo=tailwindcss" alt="TailwindCSS" />
+  <img src="https://img.shields.io/badge/Base44-BaaS-7C3AED?style=for-the-badge" alt="Base44" />
   <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-FFC107?style=for-the-badge" alt="Estado" />
   <img src="https://img.shields.io/badge/Licencia-MIT-2ECC71?style=for-the-badge" alt="Licencia" />
 </p>
 
-*Portfolio personal de @migueljerico generado con la plataforma base44, una base modular para mostrar proyectos, habilidades y experiencia profesional en la web.*
+*Portfolio personal de **@migueljerico** — single‑page application construida con React 18, Vite, TailwindCSS y desplegada en **Base44**. Muestra proyectos, habilidades y experiencia profesional en el ámbito de análisis de datos e IA.*
+
+---
+
+## 🔗 Acceso / Demo
+
+🌐 **Sitio en producción:** [https://jerico-data-flow.base44.app](https://jerico-data-flow.base44.app)
 
 ---
 
 ## 📋 Descripción
 
-Este repositorio contiene la base del portfolio personal de **@migueljerico**, construido sobre **base44**, una plataforma que facilita la creación rápida de sitios web personalizables sin renunciar a un control fino del código.
+Este repositorio contiene el código fuente del portfolio personal de **Miguel Jericó Díaz**, desarrollado como parte de su transición profesional hacia perfiles de **Análisis de Datos e Inteligencia Artificial aplicada al negocio**. La web actúa como carta de presentación digital, combinando más de 15 años de experiencia en operaciones y liderazgo de equipos con competencias técnicas modernas (Power BI, Python, R, automatización e IA generativa).
 
-El proyecto nace con el objetivo de centralizar la presencia profesional del autor en internet: servir como carta de presentación, repositorio curado de proyectos relevantes y punto de contacto para colaboraciones, ofertas laborales o contribuciones open source.
-
-Está pensado para **desarrolladores, reclutadores técnicos y colaboradores potenciales** que quieran conocer de un vistazo las competencias técnicas, la trayectoria y los proyectos destacados del autor, con un diseño limpio, modular y fácil de desplegar.
+A diferencia de otros proyectos del portfolio que se centran en ejercicios de análisis de datos, esta web pone el foco en la **capa de producto y frontend**: arquitectura de componentes, diseño de interacción, navegación por anclas, modo oscuro, barra de progreso de scroll y paleta de comandos tipo `Cmd+K`. Está pensada para **reclutadores técnicos, colaboradores potenciales y cualquier persona interesada** en conocer de un vistazo las capacidades técnicas y la trayectoria del autor.
 
 ---
 
@@ -25,26 +31,22 @@ Está pensado para **desarrolladores, reclutadores técnicos y colaboradores pot
 
 | Funcionalidad | Descripción |
 |---|---|
-| 🏠 Página de inicio | Presentación profesional con foto, nombre, rol y eslogan personal. |
-| 👤 Sección "Sobre mí" | Biografía, experiencia, formación y valores profesionales. |
-| 💼 Portafolio de proyectos | Listado filtrable de proyectos con descripción, tecnologías y enlaces. |
-| 🛠️ Stack tecnológico | Visualización de las herramientas, lenguajes y frameworks dominados. |
-| 📬 Formulario de contacto | Canal directo para recibir mensajes sin exponer el correo personal. |
-| 📱 Diseño responsive | Adaptación completa a dispositivos móviles, tablets y escritorio. |
-| 🌙 Modo oscuro | Conmutador de tema claro/oscuro persistente en el navegador. |
-| ⚡ Optimización SEO | Metaetiquetas, Open Graph y sitemap para mejorar el posicionamiento. |
-
----
-
-## 🔗 Acceso / Demo
-
-> _Pendiente de despliegue. Una vez publicado, el enlace se incluirá en esta sección._
+| 🏠 **Página de inicio (Hero)** | Presentación profesional con foto, nombre, rol y eslogan personal. |
+| 👤 **Sección "Sobre mí"** | Biografía, experiencia, formación y valores profesionales. |
+| 💼 **Portafolio de proyectos** | Galería de proyectos con tarjetas (`PortfolioCard`) que incluyen descripción y tecnologías. |
+| 🛠️ **Stack tecnológico** | Visualización de herramientas, lenguajes y frameworks dominados. |
+| 📬 **Formulario de contacto** | Canal directo para recibir mensajes (integrado con Base44). |
+| 📱 **Diseño responsive** | Adaptación completa a móviles, tablets y escritorio. |
+| 🌙 **Modo oscuro** | Conmutador de tema claro/oscuro con persistencia en el navegador. |
+| ⚡ **Barra de progreso de scroll** | Indicador visual de la posición de lectura (`ScrollProgress`). |
+| ⌨️ **Paleta de comandos** | Acceso rápido a secciones mediante `Ctrl+K` (`CommandBar`). |
+| 🔐 **Autenticación Base44** | Andamiaje completo de login, registro, recuperación de contraseña y rutas protegidas (listo para futuras áreas privadas). |
 
 ---
 
 ## ⚙️ Instalación
 
-> ⚠️ El repositorio contiene actualmente un único `README.md` como punto de partida. A continuación se detallan los pasos de instalación esperados según el stack base44.
+Sigue estos pasos para levantar el proyecto en tu entorno local:
 
 1. **Clonar el repositorio**
    ```bash
@@ -52,54 +54,56 @@ Está pensado para **desarrolladores, reclutadores técnicos y colaboradores pot
    cd portfolio-migueljerico-base44
    ```
 
-2. **Inicializar la estructura del proyecto base44**
-   ```bash
-   npx base44 init
-   ```
-
-3. **Instalar dependencias**
+2. **Instalar dependencias**
    ```bash
    npm install
    ```
 
-4. **Configurar variables de entorno**
+3. **Configurar variables de entorno**
    ```bash
    cp .env.example .env
-   # Edita .env con tus claves personales
+   # Edita .env con tus credenciales de Base44 (API key, etc.)
    ```
 
-5. **Levantar el servidor de desarrollo**
+4. **Iniciar el servidor de desarrollo**
    ```bash
    npm run dev
    ```
+
+5. **Abrir el navegador** en `http://localhost:3000` (o el puerto que indique Vite).
 
 ---
 
 ## 🚀 Uso
 
-Una vez levantado el entorno de desarrollo, abre el navegador en `http://localhost:3000` para ver el portfolio. La estructura modular de base44 permite editar cada sección desde archivos independientes:
+Una vez ejecutado el servidor de desarrollo, la aplicación se renderiza como una **single‑page application** con navegación por anclas. La estructura modular permite personalizar cada sección editando los archivos correspondientes en `src/components/portfolio/`. Por ejemplo, para modificar el contenido del Hero:
 
-```bash
-# Estructura de edición típica en base44
-src/
-├── sections/        # Bloques de la landing (Hero, About, Projects...)
-├── components/      # Componentes reutilizables (Cards, Buttons...)
-├── data/            # Contenido editable (proyectos, skills, experiencia)
-└── styles/          # Temas y estilos globales
+```jsx
+// src/components/portfolio/Hero.jsx
+export default function Hero() {
+  return (
+    <section id="inicio">
+      <h1>Miguel Jericó Díaz</h1>
+      <p>Data & IA Analyst</p>
+    </section>
+  );
+}
 ```
 
-Ejemplo de personalización del contenido en `src/data/projects.js`:
+Para añadir un nuevo proyecto al portafolio, edita el array de proyectos (por ejemplo, en `src/data/projects.js`):
 
 ```javascript
 export const projects = [
   {
     title: "Mi proyecto destacado",
-    description: "Descripción breve del proyecto y su impacto.",
+    description: "Descripción breve.",
     tech: ["React", "Node.js", "PostgreSQL"],
     link: "https://github.com/migueljerico/proyecto",
   },
 ];
 ```
+
+La paleta de comandos (`CommandBar`) se activa con `Ctrl+K` y permite navegar rápidamente entre secciones. La barra de progreso de scroll (`ScrollProgress`) se muestra en la parte superior de la página.
 
 ---
 
@@ -107,10 +111,48 @@ export const projects = [
 
 ```
 portfolio-migueljerico-base44/
-└── README.md
+├── README.md
+├── MANUAL_TECNICO.md
+├── docs/
+│   └── Portfolio_Jerico_Data_Flow_Miguel_Jerico.md
+├── public/
+│   └── (archivos estáticos, favicon, etc.)
+├── src/
+│   ├── api/
+│   │   └── base44Client.js          # Integración con backend de Base44
+│   ├── components/
+│   │   ├── portfolio/               # Componentes específicos del sitio público
+│   │   │   ├── Hero.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Portfolio.jsx
+│   │   │   ├── PortfolioCard.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── CommandBar.jsx
+│   │   │   └── ScrollProgress.jsx
+│   │   └── ui/                      # Componentes transversales / autenticación
+│   │       ├── AuthLayout.jsx
+│   │       ├── ProtectedRoute.jsx
+│   │       └── GoogleIcon.jsx
+│   ├── hooks/
+│   │   ├── use-mobile.jsx           # Detección de breakpoint móvil
+│   │   ├── use-size.jsx             # Hook genérico de tamaño
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Home.jsx                 # Página principal renderizada
+│   │   ├── Login.jsx                # Generada por Base44
+│   │   ├── Register.jsx
+│   │   ├── ForgotPassword.jsx
+│   │   └── ResetPassword.jsx
+│   ├── App.jsx                      # Router + layout
+│   ├── main.jsx                     # Punto de entrada
+│   └── index.css                    # Estilos globales
+├── components.json                  # Configuración de shadcn/ui
+├── vite.config.js                   # Configuración de Vite
+├── tailwind.config.js               # Configuración de TailwindCSS
+├── postcss.config.js                # PostCSS plugins
+└── package.json
 ```
-
-> 📌 _El repositorio se encuentra en fase inicial. La estructura anterior corresponde al estado actual; la estructura completa esperada con base44 se detalla en la sección de Uso._
 
 ---
 
@@ -118,20 +160,23 @@ portfolio-migueljerico-base44/
 
 | Herramienta | Versión / Detalle | Uso en el proyecto |
 |---|---|---|
-| **base44** | Última estable | Plataforma base de construcción del portfolio. |
+| **React** | 18.x | Framework UI principal: renderizado de componentes, estado, composición. |
+| **Vite** | 5.x | Bundler y servidor de desarrollo con HMR ultrarrápido. |
+| **TailwindCSS** | 3.x | Sistema de utilidades CSS para diseño responsive y personalización de temas. |
+| **shadcn/ui** | Configuración en `components.json` | Primitivas UI reutilizables (botones, inputs, tarjetas). |
+| **Base44** | BaaS (Backend as a Service) | Generación de código base, autenticación, almacenamiento y despliegue. |
 | **Node.js** | ≥ 18.x | Entorno de ejecución para herramientas de build. |
 | **npm** | ≥ 9.x | Gestión de dependencias y scripts. |
-| **Git** | 2.x+ | Control de versiones del proyecto. |
-| **Markdown** | CommonMark | Documentación (este README). |
+| **Git** | 2.x+ | Control de versiones. |
 
 ---
 
 ## 📚 Contexto formativo o motivación del proyecto
 
-Este proyecto nace con la motivación de consolidar la marca personal de **@migueljerico** en la web. La elección de **base44** como base responde al deseo de contar con un *starter* moderno, desacoplado y fácil de mantener, que permita iterar rápidamente sobre el contenido (proyectos, experiencia, blog) sin reescribir la base técnica cada vez.
+Este proyecto nace con la motivación de **consolidar la marca personal** de Miguel Jericó en la web, sirviendo como carta de presentación digital durante su transición profesional hacia perfiles de análisis de datos e IA. La elección de **Base44** como plataforma BaaS responde al deseo de contar con un *starter* moderno que incluya autenticación, despliegue automático y una base de código limpia.
 
-Sirve además como **lienzo de aprendizaje** para experimentar con nuevas librerías, patrones de diseño y prácticas de despliegue continuo, manteniendo un producto real (el propio portfolio) como vehículo de mejora continua.
+Además, el proyecto funciona como **lienzo de aprendizaje** para experimentar con patrones de diseño modernos (arquitectura de componentes, hooks personalizados, navegación por anclas, paleta de comandos) y prácticas de despliegue continuo, manteniendo un producto real (el propio portfolio) como vehículo de mejora continua.
 
 ---
 
-<p align="center">Creado por @migueljerico y documentado por Ollama Cloud (MiniMax M3) · 2026</p>
+<p align="center">Creado por @migueljerico y documentado por BazaarLink (DeepSeek V4 Flash (free)) · 2026</p>
