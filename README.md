@@ -13,6 +13,12 @@
 
 ---
 
+## 📸 Vista previa del Portfolio
+
+![Captura del Portfolio](./screenshots/Captura_Portfolio_Base_44.png)
+
+---
+
 ## 🔗 Acceso / Demo
 
 🌐 **Sitio en producción:** [https://jerico-data-flow.base44.app](https://jerico-data-flow.base44.app)
